@@ -1,0 +1,26 @@
+@import '../../styles/variables';
+
+.projects {
+    min-height: 100vh;
+    background-color: #3C3C3C;
+    padding: 6rem 0;
+
+    & > div {
+        @include container;
+
+        & > a {
+            color: white;
+            font-size: 1.3rem;
+            display: block;
+            text-align: center;
+            margin-top: 3rem;
+        }
+    }
+
+    h2 {
+        font-size: 2.6rem;
+        color: $primary-color;
+        text-align: center;
+        margin-bottom: 2em;
+    }
+}

@@ -1,0 +1,75 @@
+@import '../../styles/variables';
+
+.container {
+    background-color: #333232;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+    min-height: 100vh;
+}
+
+.inner {
+    max-width: 30rem;
+    text-align: center;
+    padding: 0 1rem;
+
+    button {
+        margin-bottom: 1rem;
+    }
+
+    p {
+        font-size: 1.2rem;
+    }
+    h1 {
+       color: $primary-color;
+       font-size: 4rem;
+       margin: 0.8rem 0 1rem 0;
+    }
+    h2 {
+        font-size: 2rem;
+        margin-bottom: 1rem;
+        span {
+            transition: max-width 0.8s;
+            overflow: hidden;
+            white-space: nowrap;
+            display: inline-block;
+            max-width: 50rem;
+        }
+    }
+}
+
+.socials {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    margin-left: 2rem;
+
+    & > * {
+        font-size: 1.2rem;
+        color: white;
+        &:not(:last-child) {
+            margin-bottom: 1rem;
+        }
+    }
+
+    @media (max-width: 550px) {
+        & {
+            top: 1rem;
+            left: 50%;
+            flex-direction: row;
+            transform: translate(-50%, 0);
+            margin-left: 0;
+
+            & > * {        
+                &:not(:last-child) {
+                    margin-bottom: 0;
+                    margin-right: 1rem;
+                }
+            }
+        }
+    }
+}

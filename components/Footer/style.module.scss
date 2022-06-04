@@ -1,0 +1,24 @@
+@import '../../styles/variables';
+
+.footer {
+    background-color: #333232;
+    color:white;
+    font-family: 'Open Sans';
+    font-weight: 400;
+    padding: 2rem 0;
+
+    & > div {
+        @include container;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    a {
+        color: inherit;
+        font-size: 1.5rem;
+        &:not(:last-child) {
+            margin-right: 0.8rem;
+        }
+    }
+}

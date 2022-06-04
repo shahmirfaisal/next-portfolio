@@ -1,0 +1,7 @@
+$primary-color: #EA4343;
+
+@mixin container {
+    max-width: 70rem;
+    margin: 0 auto;
+    padding: 0 1rem;
+}

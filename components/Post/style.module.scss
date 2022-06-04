@@ -1,0 +1,23 @@
+@import '../../styles/variables';
+
+.post {
+    color: white;
+    margin-bottom: 4rem;
+
+    h3 {
+        font-size: 1.8rem;
+        line-height: 2.3rem;
+        word-wrap: break-word;
+    }
+
+    p {
+        font-family: 'Open Sans';
+        color: #b6b2bf;
+        margin: 1rem 0 0 0;
+        font-weight: 400;
+    }
+}
+
+.img {
+    height: 25rem;
+}

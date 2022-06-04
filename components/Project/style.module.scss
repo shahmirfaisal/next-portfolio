@@ -1,0 +1,70 @@
+@import '../../styles/variables';
+
+.project {
+    color: white;
+    display: grid;
+    grid-template-columns: 30rem 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
+    align-items: center;
+    grid-gap: 2rem;
+    margin-top: 5rem;
+    &:not(:last-child) {
+        border-bottom: 1px solid #666262;
+    }
+    padding-bottom: 5rem;
+}
+
+.img {
+    // width: 20rem;
+    height: 20rem;
+    background-color: white;
+    img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: top;
+    }
+}
+
+.detail {
+    color: white;
+    h3 {
+        font-size: 2rem;
+    }
+
+    p {
+        font-family: 'Open Sans';
+        font-weight: 400;
+        color: #b6b2bf;
+        margin: 1rem 0 2rem 0;
+    }
+
+    i {
+        font-size: 3rem;
+        &:not(:last-child) {
+            margin-right: 1.3rem;
+        }
+    }
+
+    a {
+        color: inherit;
+        text-decoration: none;
+        font-size: 2.5rem;
+        i {
+            font-size: 2.5rem;
+        }
+        &:last-child {
+            color: $primary-color;
+        }
+        &:not(:last-child) {
+            margin-right: 1rem;
+        }
+    }
+}
+
+.tools {
+    margin: 0 0 1.5rem 0;
+    display: flex;
+    flex-wrap: wrap;
+}
