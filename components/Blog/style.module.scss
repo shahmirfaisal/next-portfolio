@@ -35,4 +35,10 @@
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(21rem, 1fr));
     grid-gap: 4rem;
+
+    @media (max-width: 400px) {
+        & {
+            grid-template-columns: repeat(auto-fill, minmax(16rem, 1fr));
+        }
+    }
 }

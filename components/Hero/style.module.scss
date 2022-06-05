@@ -14,8 +14,8 @@
     text-align: center;
     padding: 0 1rem;
 
-    button {
-        margin-bottom: 1rem;
+    a {
+        margin: 0 0.5rem 1rem 0.5rem;
     }
 
     p {
@@ -35,6 +35,12 @@
             white-space: nowrap;
             display: inline-block;
             max-width: 50rem;
+        }
+
+        @media (max-width: 550px) {
+            & {
+                font-size: 1.4rem;
+            }
         }
     }
 }

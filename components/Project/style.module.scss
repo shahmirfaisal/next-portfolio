@@ -4,7 +4,7 @@
     color: white;
     display: grid;
     grid-template-columns: 30rem 1fr;
-    grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(21rem, 1fr));
     align-items: center;
     grid-gap: 2rem;
     margin-top: 5rem;
@@ -12,6 +12,12 @@
         border-bottom: 1px solid #666262;
     }
     padding-bottom: 5rem;
+
+    @media (max-width: 400px) {
+        & {
+            grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+        }
+    }
 }
 
 .img {

@@ -13,11 +13,9 @@ export const Hero = ({ about }) => {
     let n = 1;
     function animateText() {
       el.style.maxWidth = "0px";
-
       setTimeout(() => {
         el.innerHTML = about.titles[n];
         el.style.maxWidth = "100%";
-
         n++;
         if (n === about.titles.length) n = 0;
       }, 800);
@@ -35,7 +33,7 @@ export const Hero = ({ about }) => {
           <span ref={span}>{about.titles[0]}</span>
         </h2>
 
-        <Button filled style={{ marginRight: "1rem" }} href="#contact">
+        <Button filled href="#contact">
           Say Hello <FiMail />
         </Button>
         <Button outlined href="#about">
