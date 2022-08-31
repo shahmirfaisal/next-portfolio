@@ -8,6 +8,7 @@ import { Footer } from "../components/Footer/";
 import { createClient } from "contentful";
 import Head from "next/head";
 import { useRouter } from "next/router";
+import { Hire } from "../components/Hire";
 
 const HomePage = ({ posts, about, skills, projects }) => {
   const router = useRouter();
@@ -55,6 +56,7 @@ const HomePage = ({ posts, about, skills, projects }) => {
       <Skills skills={skills} />
       <Projects projects={projects} about={about} />
       <Blog posts={posts} about={about} />
+      <Hire />
       <Contact />
       <Footer about={about} />
     </>

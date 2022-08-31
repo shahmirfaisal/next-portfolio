@@ -25,13 +25,6 @@ export const Contact = () => {
             Submit <FiSend />
           </Button>
         </form>
-
-        <p>
-          or contact me directly at{" "}
-          <a href="mailto:codewithshahmir@gmail.com">
-            codewithshahmir@gmail.com
-          </a>
-        </p>
       </div>
     </section>
   );
