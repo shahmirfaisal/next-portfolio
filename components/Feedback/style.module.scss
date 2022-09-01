@@ -1,0 +1,69 @@
+@import '../../styles/variables';
+
+.feedback {
+    padding-bottom: 8rem;
+
+    & > div {
+        @include container;
+
+        h2 {
+            font-size: 2.6rem;
+            text-align: center;
+            padding: 5rem 0 1rem 0;
+            // margin-bottom: 0.5rem;
+        }
+
+        & > p {
+            // font-family: 'Open Sans';
+            text-align: center;
+            margin-bottom: 6rem;
+            font-size: 1.3rem;
+        }
+
+        section {
+            // display: grid;
+            // grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+            display: flex;
+            flex-wrap: wrap;
+            gap: 6rem;
+            justify-content: center;
+
+            div {
+                max-width: 30rem;
+                text-align: center;
+                margin: 0 auto;
+                // box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.1);
+                // padding: 1rem 2rem;
+                // overflow: visible;
+
+                div {
+                    margin-bottom: 1rem;
+                }
+
+                a {
+                    color: $primary-color;
+                    font-size: 1.2rem;
+                    margin-top: 1rem;
+                    display: inline-block;
+                }
+
+                h3 {
+                    font-size: 1.7rem;
+                    margin-bottom: 0.3rem;
+                }
+
+                span  {
+                    font-weight: 400;
+                    font-family: 'Open Sans';
+                    margin-bottom: 1rem;
+                    display: inline-block;
+                }
+
+                p {
+                    font-weight: 400;
+                    font-family: 'Open Sans';
+                }
+            }
+        }
+    }
+}

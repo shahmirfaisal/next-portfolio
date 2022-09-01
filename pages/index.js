@@ -9,8 +9,9 @@ import { createClient } from "contentful";
 import Head from "next/head";
 import { useRouter } from "next/router";
 import { Hire } from "../components/Hire";
+import { Feedback } from "../components/Feedback";
 
-const HomePage = ({ posts, about, skills, projects }) => {
+const HomePage = ({ posts, about, skills, projects, feedbacks }) => {
   const router = useRouter();
 
   return (
@@ -56,6 +57,7 @@ const HomePage = ({ posts, about, skills, projects }) => {
       <Skills skills={skills} />
       <Projects projects={projects} about={about} />
       <Blog posts={posts} about={about} />
+      <Feedback feedbacks={feedbacks} />
       <Hire />
       <Contact />
       <Footer about={about} />
@@ -101,6 +103,7 @@ export const getStaticProps = async () => {
   const aboutRes = await client.getEntry("2tRryl7Ze1l1JfNj47Qfbl");
   const skillsRes = await client.getEntries({ content_type: "skills" });
   const projectsRes = await client.getEntries({ content_type: "project" });
+  const feedbacksRes = await client.getEntries({ content_type: "feedback" });
 
   return {
     props: {
@@ -108,6 +111,7 @@ export const getStaticProps = async () => {
       about: aboutRes.fields,
       skills: skillsRes.items,
       projects: projectsRes.items,
+      feedbacks: feedbacksRes.items,
     },
   };
 };
