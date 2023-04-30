@@ -1,6 +1,6 @@
-import classes from "./style.module.scss";
-import { FaTwitter, FaLinkedinIn, FaGithub } from "react-icons/fa";
-import { BiWorld } from "react-icons/bi";
+import classes from "./style.module.scss"
+import { FaTwitter, FaLinkedinIn, FaGithub } from "react-icons/fa"
+import { BiWorld } from "react-icons/bi"
 
 export const Footer = ({ about }) => {
   return (
@@ -21,8 +21,8 @@ export const Footer = ({ about }) => {
           </a>
         </div>
 
-        <p>2022 &copy; Shahmir Faisal</p>
+        <p>{new Date().getFullYear()} &copy; Shahmir Faisal</p>
       </div>
     </footer>
-  );
-};
+  )
+}
