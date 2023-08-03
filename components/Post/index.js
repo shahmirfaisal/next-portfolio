@@ -1,6 +1,6 @@
-import classes from "./style.module.scss";
-import { Button } from "../Button/";
-import moment from "moment";
+import classes from "./style.module.scss"
+import { Button } from "../Button/"
+import moment from "moment"
 
 export const Post = ({ post }) => {
   return (
@@ -12,11 +12,11 @@ export const Post = ({ post }) => {
       <Button
         outlined
         style={{ marginTop: "1rem" }}
-        href={`https://shahmir.me/${post.slug}`}
+        href={`https://shahmirfaisal.com/${post.slug}`}
         target="_blank"
       >
         Read More
       </Button>
     </section>
-  );
-};
+  )
+}
