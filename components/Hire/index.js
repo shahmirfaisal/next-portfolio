@@ -1,5 +1,5 @@
-import classes from "./style.module.scss";
-import Image from "next/image";
+import classes from "./style.module.scss"
+import Image from "next/image"
 
 export const Hire = () => {
   return (
@@ -25,11 +25,9 @@ export const Hire = () => {
 
         <p>
           Or reach out to me at{" "}
-          <a href="mailto:codewithshahmir@gmail.com">
-            codewithshahmir@gmail.com
-          </a>
+          <a href="mailto:me@shahmirfaisal.com">me@shahmirfaisal.com</a>
         </p>
       </div>
     </section>
-  );
-};
+  )
+}

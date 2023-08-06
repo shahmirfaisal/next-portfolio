@@ -12,7 +12,7 @@ export const Post = ({ post }) => {
       <Button
         outlined
         style={{ marginTop: "1rem" }}
-        href={`https://shahmirfaisal.com/${post.slug}`}
+        href={`https://blog.shahmirfaisal.com/${post.slug}`}
         target="_blank"
       >
         Read More
